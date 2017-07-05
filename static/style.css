@@ -1,0 +1,8 @@
+body 						{font-family:sans-serif;backgroud:#eee;}
+.title 						{color:red;}
+.select						{float:right;}
+.textarea,.submit	{text-align: center;}
+.submit					{width:150px;height:60px;border:2px;background-color:#40E0D0;font-size:30px;font-weight:bold}
+.text							{text-indent:2em;font-weight:bold;}
+.flash          { background: #CEE5F5; padding: 0.5em;
+                  border: 1px solid #AACBE2;font-weight:bold;font-size:50px;color:red;text-align:center }

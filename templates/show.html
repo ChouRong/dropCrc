@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{url_for('add_sigpot')}}" method=post>
+<div class="select">
+<p style="display:inline">Analysts </p>
+<select  name="analysts" style="display:inline">
+	<option value="none" selected>-select your name-</option>
+	<option value="Linda">Linda</option>
+	<option value="Penny">Penny</option>
+	<option value="Steven">Steven</option>
+	<option value="Gavin">Gavin</option>
+	<option value="Juwei">Juwei</option>
+	<option value="Toby">Toby</option>
+	<option value="Ted">Ted</option>
+	<option value="Thea">Thea</option>
+	<option value="Leo">Leo</option>
+	<option value="FRS">FRS</option>
+</select>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="title">Drop script pattern which is released</div>
+<br/>
+<br/>
+<br/>
+<div class="text">please input the scan_id/script_name of the released script
+pattern.(You can find it in the release pattern notify emails)</div>
+<br/>
+<div>
+<p style="display:inline">keywordtype:</p>
+<input type="radio"   name="choice" value=Sha256  checked=checked style="display:inline">Sha256
+<br/>
+<br/>
+<br/>
+</div>
+<div class="textarea"><textarea name=textarea rows="30" cols="200"></textarea>
+<br/>
+<br/>
+<input type="submit" name="submit" class="submit" value=drop>
+</div>
+</form>
+{%endblock%}

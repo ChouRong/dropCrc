@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+{%block body%}
+{%if signature_found_deleted_length%}
+<h2>these sha_256 has_found in signature and deleted</h2>
+{%for signature in signature_found_deleted%}
+{{signature}}
+{%endfor%}
+{%endif%}
+
+{%if signature_found_not_deleted_length%}
+<h2>these sha_256 has_found in signature but not deleted correctly</h2>
+{%for signature in signature_found_not_deleted%}
+{{signature}}
+{%endfor%}
+{%endif%}
+
+{%if signature_not_found_length%}
+<h2>these sha_256 not found in signature</h2>
+{%for signature in signature_not_found%}
+{{signature}}
+{%endfor%}
+{%endif%}
+{%endblock%}

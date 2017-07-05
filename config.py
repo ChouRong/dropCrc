@@ -1,0 +1,10 @@
+#HOSTNAME='r1-ipattern-mysql02.iad1'
+#USER="read2dbonly"
+#PASSWORD="g7wwb4u9"
+#PORT=3306
+#DATABASE="mts_pattern"
+HOSTNAME='localhost'
+USER='root'
+PASSWORD='root'
+PORT=3306
+DATABASE='recommend'
